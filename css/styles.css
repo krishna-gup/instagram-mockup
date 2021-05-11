@@ -100,11 +100,13 @@ a {
   fill: #fff;
 }
 
-/* Images Badges */
+/* Images in grid and badges */
 
 .image-container {
   position: relative;
 }
+
+/* TODO: If img repeats, set it commonly */
 
 .image-container > img {
   object-fit: cover;
@@ -116,4 +118,15 @@ a {
   position: absolute;
   top: 5px;
   right: 10px;
+}
+
+/* Images Circular */
+
+.image-circular-container > img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  padding: 3px;
+  border: 4px solid blueviolet;
 }
