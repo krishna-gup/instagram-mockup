@@ -68,3 +68,15 @@ a {
 .btn--stretched {
   padding: 1rem 4rem;
 }
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
