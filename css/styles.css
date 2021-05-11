@@ -80,3 +80,22 @@ a {
   display: inline-block;
   margin-right: 2rem;
 }
+
+/* Icons */
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.icon--accent {
+  fill: var(--color-accent);
+}
+
+.icon--light {
+  fill: var(--color-light);
+}
+
+.icon--white {
+  fill: #fff;
+}
