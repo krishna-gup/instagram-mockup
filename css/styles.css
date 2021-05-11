@@ -213,3 +213,27 @@ a {
 .profile--name {
   margin: 0.2rem 0 0.5rem 0;
 }
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+.grid--1x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Counter Block */
+
+.counter {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.count__item {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 1rem 0;
+}
