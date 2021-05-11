@@ -25,6 +25,7 @@ h1 {
   font-size: 2.7rem;
   color: var(--color-headings);
   font-weight: 200;
+  display: inline-block;
 }
 
 h2 {
@@ -55,6 +56,7 @@ a {
 /* Buttons */
 
 .btn {
+  width: fit-content;
   font-weight: 600;
   font-size: 1.4rem;
   padding: 0.7rem 1rem;
@@ -118,6 +120,11 @@ a {
 
 /* TODO: If img repeats, set it commonly */
 
+.image-container,
+.image-circular-container {
+  display: inline-block;
+}
+
 .image-container > img {
   object-fit: cover;
   max-width: 100%;
@@ -134,11 +141,11 @@ a {
 
 .image-circular-container > img {
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  width: 9.1rem;
+  height: 9.1rem;
   border-radius: 50%;
   padding: 3px;
-  border: 4px solid blueviolet;
+  border: 3px solid blueviolet;
 }
 
 /* Navigation Bar */
@@ -165,4 +172,33 @@ a {
   position: relative;
   left: 2px;
   bottom: 2px;
+}
+
+/* Block */
+
+.block {
+  background-color: var(--color-background-primary);
+}
+
+/* Profile Block */
+
+.profile {
+  display: flex;
+}
+
+.profile-pic {
+  padding-right: 2rem;
+}
+
+.icon--verified {
+  width: 20px;
+}
+
+.profile--info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile--name {
+  margin: 0.2rem 0 0.5rem 0;
 }
