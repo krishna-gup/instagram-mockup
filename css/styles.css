@@ -13,6 +13,12 @@ html {
   font-size: 62.5%;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 1.5rem;
   color: var(--color-body);
@@ -132,6 +138,7 @@ a {
 
 .image-container > img {
   object-fit: cover;
+  height: inherit;
   max-width: 100%;
   max-height: 100%;
 }
@@ -218,6 +225,8 @@ a {
 
 .grid {
   display: grid;
+  justify-self: center;
+  align-self: center;
 }
 
 .grid--1x3 {
@@ -231,6 +240,7 @@ a {
 .grid--4x3 {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
 }
 
 /* Counter Block */
@@ -241,8 +251,6 @@ a {
 }
 
 .count__item {
-  justify-self: center;
-  align-self: center;
   text-align: center;
   padding: 1rem 0;
 }
@@ -254,7 +262,5 @@ a {
 }
 
 .iconbar__item {
-  justify-self: center;
-  align-self: center;
   padding: 1rem 0;
 }
