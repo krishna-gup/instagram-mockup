@@ -51,3 +51,20 @@ a {
 .link:hover {
   color: #1f3f5c;
 }
+
+/* Buttons */
+
+.btn {
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+
+.btn--stretched {
+  padding: 1rem 4rem;
+}
