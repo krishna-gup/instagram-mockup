@@ -35,3 +35,19 @@ h2 {
 .text-light {
   color: var(--color-light);
 }
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: #014788;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #1f3f5c;
+}
